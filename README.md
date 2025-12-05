@@ -8,3 +8,8 @@ to launch them on start up
 3. run shell:startup
 4. drag the shortcut to the folder that opens (.\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup)
 5. the script should launch automaticaly
+
+discord ctrl + alt + d
+spotify ctrl + alt + s
+google chrome ctrl + alt + g
+minimise everything ctrl + alt + m

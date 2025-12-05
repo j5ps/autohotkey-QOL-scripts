@@ -1,13 +1,9 @@
-﻿; Ensure you are using AHK v2 for this syntax
-
-^!d::
+^!d::  ; Control + Alt + D
 {
     if WinExist("ahk_exe Discord.exe")
     {
         if WinActive("ahk_exe Discord.exe")
-        {
             WinMinimize
-        }
         else
         {
             WinMaximize
@@ -23,14 +19,12 @@
     }
 }
 
-^!s::
+^!s::  ; Control + Alt + S
 {
     if WinExist("ahk_exe Spotify.exe")
     {
         if WinActive("ahk_exe Spotify.exe")
-        {
             WinMinimize
-        }
         else
         {
             WinMaximize
@@ -46,19 +40,16 @@
     }
 }
 
-^!g::
+^!g::  ; Control + Alt + G
 {
     ChromePath := "C:\Program Files\Google\Chrome\Application\chrome.exe"
     
     if WinExist("ahk_exe chrome.exe")
     {
         if WinActive("ahk_exe chrome.exe")
-        {
             WinMinimize
-        }
         else
         {
-            ; Use WinMaximize instead of Send {F11} for "windowed full screen"
             WinMaximize
             WinActivate
         }
@@ -70,4 +61,10 @@
         WinMaximize
         WinActivate
     }
+}
+
+^!m::  ; Control + Alt + M to minimize all windows
+{
+    ; Minimize all windows
+    WinMinimizeAll 
 }
